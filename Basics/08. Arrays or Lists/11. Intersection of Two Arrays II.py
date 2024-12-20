@@ -11,9 +11,7 @@ The intersection elements printed would be in the order they appear in the first
 
 # solution
 
-
 import sys
-
 
 def intersections(arr1, n, arr2, m):
     for i in range(n):
@@ -23,7 +21,6 @@ def intersections(arr1, n, arr2, m):
                 arr2[j] = sys.maxsize
                 break
 
-
 # Taking Input Using Fast I/O
 def takeInput():
     n = int(sys.stdin.readline().strip())
@@ -32,7 +29,6 @@ def takeInput():
 
     arr = list(map(int, sys.stdin.readline().strip().split(" ")))
     return arr, n
-
 
 # main
 t = int(sys.stdin.readline().strip())
