@@ -67,8 +67,12 @@ if __name__ == '__main__':
     ll = LinkedList()
     ll.input()
 
+    # Take input for M and N
+    m = int(input())
+    n = int(input())
+
     # Call the function to delete every N nodes after M nodes
-    ll.head = deleteEveryNNodes(ll.head, 0, 2)
+    ll.head = deleteEveryNNodes(ll.head, m, n)
 
     # Print the modified linked list
     ll.print()
