@@ -53,3 +53,30 @@ class BinaryTree:
         self.root = root
         return root
 
+    def print(self):
+        inputQueue = queue.Queue()
+        outputQueue = queue.Queue()
+
+        if not self.root:
+            print("Tree is Empty")
+            return
+
+        inputQueue.put(self.root)
+
+        while not inputQueue.empty():
+            while not inputQueue.empty():
+                curr = inputQueue.get()
+
+                print(curr.data, end=' ')
+
+                if curr.left:
+                    outputQueue.put(curr.left)
+
+                if curr.right:
+                    outputQueue.put(curr.right)
+
+            print()
+
+            inputQueue, outputQueue = outputQueue, inputQueue
+
+        return
