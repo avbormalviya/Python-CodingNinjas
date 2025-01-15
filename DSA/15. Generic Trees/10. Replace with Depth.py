@@ -38,4 +38,4 @@ if __name__ == "__main__":
     replaceWithDepth(gt.root)
 
     # Print the updated tree
-    gt.print()
+    gt.print(
