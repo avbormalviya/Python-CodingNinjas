@@ -1,0 +1,38 @@
+
+# Problem statement
+
+""" Given a singly linked list of integers, reverse it iteratively and return the head to the modified list.
+
+Note :
+No need to print the list, it has already been taken care. Only return the new head to the list. """
+
+
+# solution
+
+
+from node_class import LinkedList
+
+
+# Function to reverse a linked list recursively
+def reverse(head):
+    prev = None
+
+    while head:
+        next = head.next
+        head.next = prev
+        prev = head
+        head = next
+
+    return prev
+
+
+if __name__ == '__main__':
+    # Create a linked list and take input
+    ll = LinkedList()
+    ll.input()
+
+    # Reverse the linked list and update its head
+    ll.head = reverse(ll.head)
+
+    # Print the reversed linked list
+    ll.print()
