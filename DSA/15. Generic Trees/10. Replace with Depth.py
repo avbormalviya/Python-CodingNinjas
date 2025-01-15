@@ -39,4 +39,3 @@ if __name__ == "__main__":
 
     # Print the updated tree
     gt.print()
-
