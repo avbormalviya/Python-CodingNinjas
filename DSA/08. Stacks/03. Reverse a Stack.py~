@@ -1,0 +1,40 @@
+
+# Problem statement
+
+""" You have been given two stacks that can store integers as the data. Out of the two given stacks, one
+is populated and the other one is empty. You are required to write a function that reverses the populated
+stack using the one which is empty. """
+
+
+# solution
+
+
+def reverseStack(inputStack, emptyStack):
+    if len(inputStack) == 0 or len(inputStack) == 1:
+        return
+
+    x = inputStack[-1]
+    inputStack.pop()
+
+    reverseStack(inputStack, emptyStack)
+
+    while len(inputStack) > 0:
+        emptyStack.append(inputStack[-1])
+        inputStack.pop()
+
+    inputStack.append(x)
+
+    while len(emptyStack) > 0:
+        inputStack.append(emptyStack[-1])
+        emptyStack.pop()
+
+    return
+
+
+inputStack = list(map(int, input().split()))
+emptyStack = list()
+
+reverseStack(inputStack, emptyStack)
+
+while len(inputStack):
+    print(inputStack.pop(), end=" ")
