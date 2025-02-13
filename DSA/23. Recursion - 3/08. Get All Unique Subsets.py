@@ -16,14 +16,26 @@ you will see the subsets in lexicographically sorted order """
 # Solution
 
 
-def uniqueSubsets(arr, n):
-    if n == 0:
-        return [[]]
+def unique_subsets(nums):
+    def backtrack(start, path):
+        result.append(list(path))  # Store the current subset
+
+        for i in range(start, len(nums)):
+            if i > start and nums[i] == nums[i - 1]:  # Skip duplicate elements to avoid duplicate subsets
+                continue
+
+            path.append(nums[i])  # Include the current element in the subset
+            backtrack(i + 1, path)  # Recur with the next index
+            path.pop()  # Remove the last element to backtrack and explore other subsets
+
+    result = []
+    backtrack(0, [])
+    return result
 
 
+# Read input values
+n = int(input().strip())  # Read the number of elements
+arr = list(map(int, input().split()))  # Read the sorted integer array
 
-
-n = int(input())
-arr = list(map(int, input().split()))
-
-print(*uniqueSubsets(arr, n), sep="\n")
+# Generate and print unique subsets
+print(*unique_subsets(arr), sep="\n")
