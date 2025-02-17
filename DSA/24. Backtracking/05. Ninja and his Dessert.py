@@ -27,9 +27,37 @@ which is exactly equal to k, so the closest possible price would be 10. """
 # Solution
 
 
-def ninja_and_dessert(N, M, K, flavor, toppings):
-    def backtrack(i, curr_cost, curr_toppings):
-        pass
+def closestCost(flavor, toppings, target):
+    closest = float('inf')
 
-    for i in range(N):
-        backtrack(i, 0, 0)
+    def dfs(index, current_cost):
+        nonlocal closest
+
+        # Update closest cost if the new one is better
+        if abs(current_cost - target) < abs(closest - target) or \
+                (abs(current_cost - target) == abs(closest - target) and current_cost < closest):
+            closest = current_cost
+
+        # If the current cost exceeds target, no need to explore further
+        if current_cost >= target or index >= len(toppings):
+            return
+
+        # Explore options: (0, 1, or 2 of the current topping)
+        dfs(index + 1, current_cost)  # 0 times
+        dfs(index + 1, current_cost + toppings[index])  # 1 time
+        dfs(index + 1, current_cost + 2 * toppings[index])  # 2 times
+
+    # Try each base flavor and explore topping combinations
+    for base in flavor:
+        dfs(0, base)
+
+    return closest
+
+
+N = int(input())
+M = int(input())
+K = int(input())
+flavor = list(map(int, input().split()))
+toppings = list(map(int, input().split()))
+
+print(closestCost(flavor, toppings, K))
