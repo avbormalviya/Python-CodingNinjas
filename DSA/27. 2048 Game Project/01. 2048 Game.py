@@ -102,7 +102,7 @@ def print_grid(grid):
 # Main function to run the game loop
 def main():
     mat = start_game()
-    print_grid(mat)  # Display the initial board
+    print_grid(mat)  # Display the initial board state
     while True:
         move = input("Enter move (1: Up, 2: Down, 3: Left, 4: Right): ")  # Get user input
         if move == '1':
