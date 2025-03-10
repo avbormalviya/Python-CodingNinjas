@@ -1,0 +1,63 @@
+
+# Problem statement
+
+""" Given an undirected graph G(V,E), check if the graph G is connected graph or not.
+
+Note:
+
+1. V is the number of vertices present in graph G and vertices are numbered from 0 to V-1.
+2. E is the number of edges present in graph G. """
+
+
+# Solution
+
+from collections import deque
+
+class Graph:
+    def __init__(self, vertices):
+        """Initializes the graph with a given number of vertices."""
+        self.V = vertices  # Number of vertices
+        self.graph = [[] for _ in range(vertices)]  # Adjacency list representation
+
+    def addEdge(self, u, v):
+        """Adds an undirected edge between vertices u and v."""
+        self.graph[u].append(v)
+        self.graph[v].append(u)
+
+    def isConnected(self):
+        """
+        Checks if the graph is fully connected.
+        A graph is connected if there is a path between every pair of vertices.
+        """
+        if self.V == 1:  # A single-node graph is trivially connected
+            return True
+
+        visited = [False] * self.V  # Track visited nodes
+        queue = deque([0])  # Start BFS from vertex 0
+        visited[0] = True  # Mark the first vertex as visited
+
+        while queue:
+            node = queue.popleft()  # Remove the front node from the queue
+
+            # Visit all connected neighbors
+            for neighbor in self.graph[node]:
+                if not visited[neighbor]:  # If neighbor is unvisited
+                    visited[neighbor] = True  # Mark it as visited
+                    queue.append(neighbor)  # Add it to the queue
+
+        # If all nodes were visited, the graph is connected
+        return all(visited)
+
+
+# Input handling
+V, E = map(int, input().split())  # Read number of vertices and edges
+
+g = Graph(V)  # Create graph
+
+# Read edges and add them to the graph
+for _ in range(E):
+    u, v = map(int, input().split())
+    g.addEdge(u, v)
+
+# Check if the graph is connected and print the result
+print(g.isConnected())
