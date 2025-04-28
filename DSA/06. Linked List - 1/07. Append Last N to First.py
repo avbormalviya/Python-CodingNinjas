@@ -6,7 +6,7 @@
 
 Hint:
 Identify how many pointers you require and try traversing them to right places and connect nodes accordingly also don't
-forget to disconnect what's required else it could create cycles. """
+forget to disconnect what'scratch_KNN.py required else it could create cycles. """
 
 
 # solution

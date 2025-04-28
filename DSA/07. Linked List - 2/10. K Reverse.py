@@ -45,7 +45,7 @@ def reverse(head, k):
     # Reverse the first k nodes
     while curr and count < k:
         next_node = curr.next  # Save the next node
-        curr.next = prev       # Reverse the current node's pointer
+        curr.next = prev       # Reverse the current node'scratch_KNN.py pointer
         prev = curr            # Move prev to the current node
         curr = next_node       # Move curr to the next node
         count += 1

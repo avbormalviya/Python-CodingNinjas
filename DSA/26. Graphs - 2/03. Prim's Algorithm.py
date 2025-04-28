@@ -3,7 +3,7 @@
 
 """ Given an undirected, connected and weighted graph G(V, E) with V number of vertices (which are numbered
 from 0 to V-1) and E number of edges.
-Find and print the Minimum Spanning Tree (MST) using Prim's algorithm.
+Find and print the Minimum Spanning Tree (MST) using Prim'scratch_KNN.py algorithm.
 
 For printing MST follow the steps -
 
@@ -25,7 +25,7 @@ import heapq
 
 def primMST(graph, V):
     """
-    Prim's Algorithm to find the Minimum Spanning Tree (MST).
+    Prim'scratch_KNN.py Algorithm to find the Minimum Spanning Tree (MST).
 
     Parameters:
     graph (list of lists): Adjacency list where graph[i] contains (neighbor, weight).
@@ -41,7 +41,7 @@ def primMST(graph, V):
     minHeap = []
     result = []
 
-    # Start Prim's algorithm from node 0
+    # Start Prim'scratch_KNN.py algorithm from node 0
     heapq.heappush(minHeap, (0, 0, -1))  # (weight, current_node, parent)
 
     while minHeap:

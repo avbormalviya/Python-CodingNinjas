@@ -11,7 +11,7 @@ If more than one equilibrium indices are present, then the index appearing first
 returned. Negative one(-1) if no such index is present.
 
 Example:
-Let's consider an array/list Arr = [2, 3, 10, -10, 4, 2, 9]  of size, N = 7.
+Let'scratch_KNN.py consider an array/list Arr = [2, 3, 10, -10, 4, 2, 9]  of size, N = 7.
 
 There exist three equilibrium indices, one at 2, another at 3, and another at 5.
 

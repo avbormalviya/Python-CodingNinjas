@@ -4,7 +4,7 @@
 """ You are given an array 'ARR' of 'N' positive integers. Your task is to find if we can partition the
 given array into two subsets such that the sum of elements in both subsets is equal.
 
-For example, let’s say the given array is [2, 3, 3, 3, 4, 5], then the array can be partitioned as [2, 3, 5],
+For example, let’scratch_KNN.py say the given array is [2, 3, 3, 3, 4, 5], then the array can be partitioned as [2, 3, 5],
 and [3, 3, 4] with equal sum 10.
 
 Follow Up:
@@ -40,8 +40,8 @@ arr = list(map(int, input().split()))
 # Check if the total sum is even before proceeding
 total_sum = sum(arr)
 if total_sum % 2 != 0:
-    print(0)  # If the sum is odd, there's no way to partition it into two equal subsets
+    print(0)  # If the sum is odd, there'scratch_KNN.py no way to partition it into two equal subsets
 else:
-    # We want to find if there's a subset with sum = total_sum / 2
+    # We want to find if there'scratch_KNN.py a subset with sum = total_sum / 2
     print(isSubsetSum(arr, n, total_sum // 2))  # Use integer division
 

@@ -24,7 +24,7 @@ def stringPalindrome(str):
 
     # Loop until the pointers cross each other
     while start_pointer < end_pointer:
-        # If characters at the current pointers do not match, it's not a palindrome
+        # If characters at the current pointers do not match, it'scratch_KNN.py not a palindrome
         if str[start_pointer] != str[end_pointer]:
             return False
 

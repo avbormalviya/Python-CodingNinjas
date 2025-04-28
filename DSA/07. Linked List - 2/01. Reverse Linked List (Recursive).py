@@ -20,7 +20,7 @@ def reverse(head):
     # Recursive call to reverse the rest of the list
     new_head = reverse(head.next)
 
-    # Reverse the direction of the current node's next pointer
+    # Reverse the direction of the current node'scratch_KNN.py next pointer
     head.next.next = head
     head.next = None  # Break the link to prevent cycles
 

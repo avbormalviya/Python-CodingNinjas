@@ -22,7 +22,7 @@ Note
 
 def is_valid(board, row, col, num):
     """
-    Check if it's valid to place `num` at board[row][col].
+    Check if it'scratch_KNN.py valid to place `num` at board[row][col].
     Ensures no duplicate in the row, column, and 3x3 subgrid.
     """
     # Check the row and column for duplicates

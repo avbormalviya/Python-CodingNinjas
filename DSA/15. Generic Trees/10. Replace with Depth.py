@@ -22,7 +22,7 @@ def replaceWithDepth(root, depth=0):
     if root is None:
         return
 
-    # Set the node's data to the current depth
+    # Set the node'scratch_KNN.py data to the current depth
     root.data = depth
 
     # Recursively process each child, incrementing the depth

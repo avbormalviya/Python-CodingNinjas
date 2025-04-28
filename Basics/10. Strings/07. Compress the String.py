@@ -57,5 +57,5 @@ def compressTheString(string):
 # Input a string from the user
 string = input()
 
-# Test the function with the user's input
+# Test the function with the user'scratch_KNN.py input
 print(compressTheString(string))

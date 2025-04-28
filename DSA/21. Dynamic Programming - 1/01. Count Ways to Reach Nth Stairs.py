@@ -16,7 +16,7 @@ def countDistinctWays(n, memo):
     if n < 0:
         return 0
 
-    # Base case: If n is 0, there's exactly one way (do nothing)
+    # Base case: If n is 0, there'scratch_KNN.py exactly one way (do nothing)
     if n == 0:
         return 1
 

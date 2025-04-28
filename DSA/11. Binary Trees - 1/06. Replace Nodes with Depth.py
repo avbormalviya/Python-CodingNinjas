@@ -15,13 +15,13 @@ The modified tree will be printed in the in-order fashion. """
 from binary_tree import BinaryTree
 
 
-# Function to replace each node's value with its depth and print the depth
+# Function to replace each node'scratch_KNN.py value with its depth and print the depth
 def replaceWithDepth(root, depth=0):
     # Base case: If the node is None, return
     if root is None:
         return
 
-    # Set the current node's data to its depth
+    # Set the current node'scratch_KNN.py data to its depth
     root.data = depth
 
     # Recursively call replaceWithDepth for the left subtree

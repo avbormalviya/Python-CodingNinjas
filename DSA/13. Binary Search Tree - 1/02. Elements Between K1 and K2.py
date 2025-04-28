@@ -29,7 +29,7 @@ def elementsInRangeK1K2(root: Node, k1: int, k2: int) -> None:
     if root.data > k1:
         elementsInRangeK1K2(root.left, k1, k2)
 
-    # Print the current node if it's within the range
+    # Print the current node if it'scratch_KNN.py within the range
     if k1 <= root.data <= k2:
         print(root.data, end=' ')
 

@@ -40,7 +40,7 @@ def dfs(graph, visited, color, node, m, n):
     visited[node] = True
 
     for neighbor in range(n):
-        if graph[node][neighbor]:  # If there's an edge
+        if graph[node][neighbor]:  # If there'scratch_KNN.py an edge
             if color[neighbor] == color[node]:  # Conflict check
                 return False
             if not visited[neighbor]:  # If not visited, color it

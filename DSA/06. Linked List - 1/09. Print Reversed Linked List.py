@@ -26,7 +26,7 @@ def print_reverse(head):
         return
 
     print_reverse(head.next)  # Recursive call for the next node
-    print(head.data, end=" ")  # Print the current node's data after recursive call
+    print(head.data, end=" ")  # Print the current node'scratch_KNN.py data after recursive call
 
 
 if __name__ == "__main__":

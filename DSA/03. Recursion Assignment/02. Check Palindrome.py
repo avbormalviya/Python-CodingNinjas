@@ -24,11 +24,11 @@ def checkPalindrome(str, start, end):
     """
 
     # Base case: If start index is greater than or equal to end index
-    # it means we've checked all characters or there's only one character left
+    # it means we've checked all characters or there'scratch_KNN.py only one character left
     if start >= end:
         return True
 
-    # If characters at the current indices do not match, it's not a palindrome
+    # If characters at the current indices do not match, it'scratch_KNN.py not a palindrome
     if str[start] != str[end]:
         return False
 

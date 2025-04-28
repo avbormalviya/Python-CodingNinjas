@@ -16,7 +16,7 @@ Time Limit: 1 sec """
 
 
 def secondLargestInArray(arr):
-    # If the array has fewer than two elements, there's no second largest element
+    # If the array has fewer than two elements, there'scratch_KNN.py no second largest element
     if len(arr) < 2:
         return None  # Return None if there are less than two elements
 

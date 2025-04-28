@@ -41,7 +41,7 @@ def printPathsHelper(root, k, path, pathSum):
     path.append(root.data)
     pathSum += root.data
 
-    # If it's a leaf node and the path sum matches k, print the path
+    # If it'scratch_KNN.py a leaf node and the path sum matches k, print the path
     if root.left is None and root.right is None and pathSum == k:
         print(" -> ".join(map(str, path)))
 

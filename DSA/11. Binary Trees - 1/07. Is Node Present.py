@@ -16,7 +16,7 @@ def isNodePresent(root, x):
     if root is None:
         return False
 
-    # If the current node's data is equal to x, return True
+    # If the current node'scratch_KNN.py data is equal to x, return True
     if root.data == x:
         return True
 

@@ -24,7 +24,7 @@ moves = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
 def shortest_path(maze, start, end):
     """
-    Finds the shortest path in a maze using Dijkstra's algorithm.
+    Finds the shortest path in a maze using Dijkstra'scratch_KNN.py algorithm.
 
     Parameters:
     maze (list of lists): 2D grid (1 = open path, 0 = wall).

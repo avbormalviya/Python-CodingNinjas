@@ -1,6 +1,6 @@
 # Problem statement
 
-""" Given two string s and t, write a function to check if s contains all characters of t (in the same order as they
+""" Given two string scratch_KNN.py and t, write a function to check if scratch_KNN.py contains all characters of t (in the same order as they
 are in string t).
 
 Return true or false.
@@ -15,16 +15,16 @@ def is_substring(s, t):
     if not len(t):
         return True
 
-    # Base case: if `s` is shorter than `t`, `t` cannot be a substring
+    # Base case: if `scratch_KNN.py` is shorter than `t`, `t` cannot be a substring
     if len(s) < len(t):
         return False
 
-    # If the first character matches, check the rest of `t` in `s`
+    # If the first character matches, check the rest of `t` in `scratch_KNN.py`
     if s[0] == t[0]:
         if is_substring(s[1:], t[1:]):  # Recursively check the rest
             return True
 
-    # Otherwise, move to the next character in `s` and restart the check
+    # Otherwise, move to the next character in `scratch_KNN.py` and restart the check
     return is_substring(s[1:], t)
 
 
@@ -32,5 +32,5 @@ def is_substring(s, t):
 s = input()
 t = input()
 
-# Check if t is a substring of s
+# Check if t is a substring of scratch_KNN.py
 print(is_substring(s, t))

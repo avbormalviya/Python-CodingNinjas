@@ -42,7 +42,7 @@ def partition(s):
             return
 
         for end in range(start, n):
-            if dp[start][end]:  # If substring s[start:end+1] is a palindrome
+            if dp[start][end]:  # If substring scratch_KNN.py[start:end+1] is a palindrome
                 part.append(s[start:end + 1])  # Add substring to current partition
                 backtrack(end + 1)  # Move to the next part of the string
                 part.pop()  # Backtrack

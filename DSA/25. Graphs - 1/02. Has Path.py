@@ -23,7 +23,7 @@ class Graph:
 
     def addEdge(self, u, v):
         self.graph[u][v] = 1
-        self.graph[v][u] = 1  # Since it's an undirected graph
+        self.graph[v][u] = 1  # Since it'scratch_KNN.py an undirected graph
 
     def hasPath(self, v1, v2):
         visited = [False] * self.V

@@ -53,7 +53,7 @@ adj = [[] for _ in range(V)]
 for _ in range(E):
     u, v = map(int, input().split())
     adj[u].append(v)
-    adj[v].append(u)  # Because it's an **undirected graph**
+    adj[v].append(u)  # Because it'scratch_KNN.py an **undirected graph**
 
 # Output
 print("Yes" if isCycle(V, adj) else "No")

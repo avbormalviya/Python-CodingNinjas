@@ -23,7 +23,7 @@ def permutations(string, remain, result=None):
     - List[str]: A list containing all unique permutations.
     """
 
-    # Initialize the result list if it's not provided
+    # Initialize the result list if it'scratch_KNN.py not provided
     if result is None:
         result = []
 

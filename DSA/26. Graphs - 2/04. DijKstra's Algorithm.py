@@ -5,7 +5,7 @@
 (which are numbered from 0 to V-1) and E number of edges.
 
 Find and print the shortest distance from the source vertex (i.e. Vertex 0) to all other vertices
-(including source vertex also) using Dijkstra's Algorithm. """
+(including source vertex also) using Dijkstra'scratch_KNN.py Algorithm. """
 
 
 # Solution
@@ -16,7 +16,7 @@ import heapq
 
 def dijkstra(graph, V, start=0):
     """
-    Dijkstra's Algorithm to find the shortest path from a source node.
+    Dijkstra'scratch_KNN.py Algorithm to find the shortest path from a source node.
 
     Parameters:
     graph (list of lists): Adjacency list where graph[i] contains (neighbor, weight).

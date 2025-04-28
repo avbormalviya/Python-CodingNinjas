@@ -10,7 +10,7 @@ strongly connected components (SCCs) present in the graph. """
 
 def dfs(node, visited, discovered, low, stack, isInStack, time, adj, sccs):
     """
-    Depth-First Search (DFS) function to find Strongly Connected Components (SCCs) using Tarjan’s Algorithm.
+    Depth-First Search (DFS) function to find Strongly Connected Components (SCCs) using Tarjan’scratch_KNN.py Algorithm.
     """
     visited[node] = True
     discovered[node] = low[node] = time[0]  # Set discovery and low-link value
@@ -23,7 +23,7 @@ def dfs(node, visited, discovered, low, stack, isInStack, time, adj, sccs):
         if not visited[neighbour]:  # If the node is not visited, recurse
             dfs(neighbour, visited, discovered, low, stack, isInStack, time, adj, sccs)
             low[node] = min(low[node], low[neighbour])  # Update low-link value
-        elif isInStack[neighbour]:  # If neighbor is in stack, it's a back edge
+        elif isInStack[neighbour]:  # If neighbor is in stack, it'scratch_KNN.py a back edge
             low[node] = min(low[node], discovered[neighbour])
 
     # If the node is the head (root) of an SCC
@@ -40,7 +40,7 @@ def dfs(node, visited, discovered, low, stack, isInStack, time, adj, sccs):
 
 def stronglyConnectedComponents(V, adj):
     """
-    Finds all SCCs in a directed graph using Tarjan’s Algorithm.
+    Finds all SCCs in a directed graph using Tarjan’scratch_KNN.py Algorithm.
     :param V: Number of vertices
     :param adj: Adjacency list of the graph
     :return: List of SCCs

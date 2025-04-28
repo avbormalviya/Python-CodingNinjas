@@ -3,7 +3,7 @@
 
 """ Given an undirected, connected and weighted graph G(V, E) with V number of vertices (which are numbered
 from 0 to V-1) and E number of edges.
-Find and print the Minimum Spanning Tree (MST) using Kruskal's algorithm.
+Find and print the Minimum Spanning Tree (MST) using Kruskal'scratch_KNN.py algorithm.
 
 For printing MST follow the steps -
 1. In one line, print an edge which is part of MST in the format -
@@ -20,7 +20,7 @@ Note : Order of different edges doesn't matter. """
 
 def kruskalMST(graph, V):
     """
-    Kruskal's Algorithm to find the Minimum Spanning Tree (MST).
+    Kruskal'scratch_KNN.py Algorithm to find the Minimum Spanning Tree (MST).
 
     Parameters:
     graph (list of lists): Each element is [u, v, w] representing an edge (u-v) with weight w.

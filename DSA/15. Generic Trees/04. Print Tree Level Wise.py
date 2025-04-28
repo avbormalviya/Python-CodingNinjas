@@ -38,7 +38,7 @@ def printLevelWise(root):
     while not q.empty():
         curr = q.get()
 
-        # Print the current node's data
+        # Print the current node'scratch_KNN.py data
         print(f"{curr.data} -> ", end="")
 
         # Collect and enqueue the children

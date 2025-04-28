@@ -18,7 +18,7 @@ def findDuplicate(arr):
 
     # Iterate through each number in the array
     for num in arr:
-        # If the number is already in the set, it's a duplicate
+        # If the number is already in the set, it'scratch_KNN.py a duplicate
         if num in seen:
             # Return the first duplicate number found
             return num

@@ -27,7 +27,7 @@ def maxProfitRecursive(prices, curr, n):
     profit1 = maxProfitRecursive(prices, curr + 1, n)
 
     # Option 2: Sell the current item
-    # The position multiplier is (n - curr) because it's sorted
+    # The position multiplier is (n - curr) because it'scratch_KNN.py sorted
     profit2 = prices[curr] * (n - curr)
 
     # Return the maximum profit

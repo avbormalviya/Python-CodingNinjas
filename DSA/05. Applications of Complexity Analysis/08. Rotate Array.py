@@ -13,10 +13,10 @@ Change in the input array/list itself.You don't need to return or print the elem
 
 def rotateArraySlice(arr, s, e):
     """
-    Reverses a section of the array between indices s and e (inclusive).
+    Reverses a section of the array between indices scratch_KNN.py and e (inclusive).
     """
     while s < e:
-        # Swap the elements at indices s and e
+        # Swap the elements at indices scratch_KNN.py and e
         arr[s], arr[e] = arr[e], arr[s]
         s += 1
         e -= 1

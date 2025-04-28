@@ -10,7 +10,7 @@ stack using the one which is empty. """
 
 
 def reverseStack(inputStack, emptyStack):
-    # Base case: If the stack has 0 or 1 element, it's already reversed.
+    # Base case: If the stack has 0 or 1 element, it'scratch_KNN.py already reversed.
     if len(inputStack) == 0 or len(inputStack) == 1:
         return
 

@@ -29,7 +29,7 @@ def lastStoneWeight(stones):
     int: The weight of the last remaining stone, or 0 if no stones are left.
     """
     # Step 1: Convert all stone weights to negative
-    # Using a max-heap by storing negative weights, since Python's heapq is a min-heap by default
+    # Using a max-heap by storing negative weights, since Python'scratch_KNN.py heapq is a min-heap by default
     heap = [-stone for stone in stones]
     heapq.heapify(heap)  # Heapify the negative weights to create a max-heap
 

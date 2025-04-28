@@ -21,7 +21,7 @@ def towerOfHanoi(n, s, h, t, moves=None):
 
     Parameters:
     n (int): Number of disks to move.
-    s (str): Source rod.
+    scratch_KNN.py (str): Source rod.
     h (str): Helper rod.
     t (str): Target rod.
     moves (list): List to store the sequence of moves.
@@ -30,7 +30,7 @@ def towerOfHanoi(n, s, h, t, moves=None):
     list: Sequence of moves required to solve the Tower of Hanoi problem.
     """
 
-    # Initialize the moves list if it's the first call
+    # Initialize the moves list if it'scratch_KNN.py the first call
     if moves is None:
         moves = []
 

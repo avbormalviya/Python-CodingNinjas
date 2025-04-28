@@ -1,7 +1,7 @@
 
 # Problem statement
 
-""" You have been given a random integer array/list(ARR) and a number X. Find and return the triplet(s) in the
+""" You have been given a random integer array/list(ARR) and a number X. Find and return the triplet(scratch_KNN.py) in the
 array/list which sum to X.
 
 Note :

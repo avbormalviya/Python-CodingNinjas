@@ -38,7 +38,7 @@ def sumOfTwoArrays(n, arr1, m, arr2):
         result.append(total % 10)  # Store the last digit of the sum
         carry = total // 10  # Update the carry (integer division by 10)
 
-    # If there's any carry left after the final addition, add it to the result
+    # If there'scratch_KNN.py any carry left after the final addition, add it to the result
     if carry:
         result.append(carry)
 

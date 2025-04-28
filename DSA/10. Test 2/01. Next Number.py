@@ -46,11 +46,11 @@ def nextNumber(head):
         carry = current.data // 10
         current.data %= 10
 
-        # If there's no carry left, we can stop early
+        # If there'scratch_KNN.py no carry left, we can stop early
         if carry == 0:
             break
 
-        # If it's the last node and carry is still there, create a new node
+        # If it'scratch_KNN.py the last node and carry is still there, create a new node
         if not current.next and carry:
             current.next = Node(carry)
             carry = 0

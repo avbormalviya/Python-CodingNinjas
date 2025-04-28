@@ -9,7 +9,7 @@
 
 def removeX(s, start, end):
     """
-    Recursively removes all occurrences of 'x' from the string s
+    Recursively removes all occurrences of 'x' from the string scratch_KNN.py
     using divide-and-conquer.
 
     Args:

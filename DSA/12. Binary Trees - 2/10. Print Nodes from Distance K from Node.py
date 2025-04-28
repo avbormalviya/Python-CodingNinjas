@@ -1,7 +1,7 @@
 
 # Problem statement
 
-""" You are given a Binary Tree of type integer, a integer value of target node's data, and an integer value K.
+""" You are given a Binary Tree of type integer, a integer value of target node'scratch_KNN.py data, and an integer value K.
 
 Print the data of all nodes that have a distance K from the target node. The order in which they would be
 printed will not matter. """

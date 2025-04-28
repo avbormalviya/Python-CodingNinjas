@@ -26,7 +26,7 @@ def isBalanced(expression):
             if stack:  # Check if there is an unmatched opening parenthesis in the stack
                 stack.pop()  # If the stack is not empty, pop the last opening parenthesis
             else:
-                return False  # If the stack is empty, it means there's no matching '(' for this ')'
+                return False  # If the stack is empty, it means there'scratch_KNN.py no matching '(' for this ')'
 
     # After the loop, check if the stack is empty
     # If the stack is empty, all opening parentheses had matching closing ones, so the expression is balanced

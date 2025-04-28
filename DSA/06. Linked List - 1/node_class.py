@@ -48,4 +48,4 @@ class LinkedList:
             print(current.data, end=" -> ")  # Print the data with an arrow
             current = current.next  # Move to the next node
 
-        print(current.data)  # Print the last node's data without the arrow
+        print(current.data)  # Print the last node'scratch_KNN.py data without the arrow

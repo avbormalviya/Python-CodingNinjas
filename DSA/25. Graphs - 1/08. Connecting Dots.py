@@ -31,7 +31,7 @@ def dfs(arr, x, y, parent_x, parent_y, visited):
         if new_x < 0 or new_x >= len(arr) or new_y < 0 or new_y >= len(arr[0]):
             continue
 
-        # Check if it's the same character
+        # Check if it'scratch_KNN.py the same character
         if arr[new_x][new_y] != arr[x][y]:
             continue
 

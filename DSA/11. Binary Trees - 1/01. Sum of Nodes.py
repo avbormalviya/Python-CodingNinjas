@@ -16,7 +16,7 @@ def sumOfNodes(root):
     if root is None:
         return 0
 
-    # Recursive case: sum up the current node's data, left subtree, and right subtree
+    # Recursive case: sum up the current node'scratch_KNN.py data, left subtree, and right subtree
     return root.data + sumOfNodes(root.left) + sumOfNodes(root.right)
 
 

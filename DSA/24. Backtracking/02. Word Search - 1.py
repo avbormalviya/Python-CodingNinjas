@@ -13,7 +13,7 @@ The same letter cell should not be used more than once.
 For Example:
 For a given word “design” and the given 2D board
 [[q’, ‘v’, ‘m’, ‘h’],
- [‘d’, ‘e’, ‘s’, ‘i’],
+ [‘d’, ‘e’, ‘scratch_KNN.py’, ‘i’],
  [‘d’, ‘g’, ‘f’, ‘g’],
  [‘e’, ‘c’, ‘p’, ‘n’]]
 

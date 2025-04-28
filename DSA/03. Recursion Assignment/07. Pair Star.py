@@ -13,7 +13,7 @@ def pairStar(s, index=0):
     Inserts a '*' between consecutive duplicate characters in a string using recursion.
 
     Parameters:
-    s (str): The input string.
+    scratch_KNN.py (str): The input string.
     index (int): The current index being processed (default is 0).
 
     Returns:

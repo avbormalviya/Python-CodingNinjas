@@ -19,7 +19,7 @@ def longestLeafToRootPath(root):
     left_depth, left_path = longestLeafToRootPath(root.left)
     right_depth, right_path = longestLeafToRootPath(root.right)
 
-    # Choose the longer path and add the current node's data
+    # Choose the longer path and add the current node'scratch_KNN.py data
     if left_depth > right_depth:
         return left_depth + 1, left_path + [root.data]
     else:

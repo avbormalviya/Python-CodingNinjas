@@ -20,7 +20,7 @@ def lis_recursive(arr, n, i, prev):
     # Option 1: Skip current element
     exclude = lis_recursive(arr, n, i + 1, prev)
 
-    # Option 2: Include current element (only if it's increasing)
+    # Option 2: Include current element (only if it'scratch_KNN.py increasing)
     include = 0
     if prev == -1 or arr[i] > arr[prev]:
         include = 1 + lis_recursive(arr, n, i + 1, i)

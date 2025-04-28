@@ -45,5 +45,5 @@ def reverseEachWords(str):
 # Input a string from the user
 str = input()
 
-# Test the function with the user's input
+# Test the function with the user'scratch_KNN.py input
 print(reverseEachWords(str))

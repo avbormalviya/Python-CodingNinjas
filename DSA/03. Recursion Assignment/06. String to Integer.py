@@ -28,7 +28,7 @@ def stringToInteger(str):
         return int(str)
 
     # Recursive case: Process the last digit, convert it to integer,
-    # and multiply the rest of the string's integer value by 10.
+    # and multiply the rest of the string'scratch_KNN.py integer value by 10.
     return int(str[-1]) + 10 * stringToInteger(str[:-1])
 
 

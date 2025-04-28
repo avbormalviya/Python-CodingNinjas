@@ -15,10 +15,10 @@ The order of subsequences are not important. Print every subsequence in new line
 
 def subsequences(s, index=0, curr=""):
     """
-    Recursively prints all subsequences of the string `s`.
+    Recursively prints all subsequences of the string `scratch_KNN.py`.
 
     Parameters:
-    - s: The input string.
+    - scratch_KNN.py: The input string.
     - index: The current position in the string (default is 0).
     - curr: The current subsequence being built (default is an empty string).
     """
@@ -30,7 +30,7 @@ def subsequences(s, index=0, curr=""):
         return
 
     # Recursive Call 1 (Include):
-    # Add the current character s[index] to the current subsequence (curr)
+    # Add the current character scratch_KNN.py[index] to the current subsequence (curr)
     # and recursively process the remainder of the string.
     subsequences(s, index + 1, curr + s[index])
 

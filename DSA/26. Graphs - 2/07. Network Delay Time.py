@@ -19,7 +19,7 @@ import sys
 
 def dijkstra(graph, N, start):
     """
-    Dijkstra's Algorithm to find shortest time from start node to all nodes.
+    Dijkstra'scratch_KNN.py Algorithm to find shortest time from start node to all nodes.
 
     Parameters:
     graph (list of lists): Adjacency list where graph[i] contains (neighbor, weight).

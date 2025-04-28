@@ -19,5 +19,5 @@ def removeCharacter(str, x):
 str = input()
 x = input()
 
-# Test the function with the user's input
+# Test the function with the user'scratch_KNN.py input
 print(removeCharacter(str, x))

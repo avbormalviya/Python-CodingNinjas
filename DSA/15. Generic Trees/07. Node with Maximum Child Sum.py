@@ -35,7 +35,7 @@ def maxSumNode(root):
     for child in root.children:
         child_max_node, child_max_sum = maxSumNode(child)
 
-        # Update if a child's subtree has a greater sum
+        # Update if a child'scratch_KNN.py subtree has a greater sum
         if child_max_sum > max_sum:
             max_node = child_max_node
             max_sum = child_max_sum

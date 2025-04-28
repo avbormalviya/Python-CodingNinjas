@@ -1,7 +1,7 @@
 
 # Problem statement
 
-""" Suppose you have a string, S, made up of only 'a's and 'b's. Write a recursive function that checks if the string
+""" Suppose you have a string, S, made up of only 'a'scratch_KNN.py and 'b'scratch_KNN.py. Write a recursive function that checks if the string
 was generated using the following rules:
 
 a. The string begins with an 'a'

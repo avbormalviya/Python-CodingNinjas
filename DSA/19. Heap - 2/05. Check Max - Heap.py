@@ -29,7 +29,7 @@ def checkMaxHeap(arr, n):
         if 2 * i + 2 < n and arr[i] < arr[2 * i + 2]:
             return False
 
-    # If all conditions are satisfied, it's a max-heap
+    # If all conditions are satisfied, it'scratch_KNN.py a max-heap
     return True
 
 

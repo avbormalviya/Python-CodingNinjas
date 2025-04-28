@@ -22,7 +22,7 @@ def mirrorBinaryTree(root):
         The root of the mirrored binary tree.
     """
     if root is None:
-        # Base case: If the current node is None, there's nothing to mirror
+        # Base case: If the current node is None, there'scratch_KNN.py nothing to mirror
         return None
 
     # Recursively mirror the left subtree

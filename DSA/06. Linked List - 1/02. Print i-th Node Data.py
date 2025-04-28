@@ -59,7 +59,7 @@ if __name__ == "__main__":
     # Take user input for the index
     i = int(input())
 
-    # Retrieve and print the i-th node's data
+    # Retrieve and print the i-th node'scratch_KNN.py data
     data = printIthNode(ll.head, i)
     if data is not None:
         print(data)

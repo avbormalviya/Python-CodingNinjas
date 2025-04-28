@@ -42,6 +42,6 @@ adj_matrix = [[0] * V for _ in range(V)]
 for _ in range(E):
     u, v = map(int, input().split())
     adj_matrix[u][v] = 1
-    adj_matrix[v][u] = 1  # Since it's an undirected graph
+    adj_matrix[v][u] = 1  # Since it'scratch_KNN.py an undirected graph
 
 bfs_traversal(adj_matrix, V)

@@ -11,7 +11,7 @@ Print all the leader elements separated by space and in the same order they are 
 
 
 def leadersInArray(arr):
-    # List to store leaders, initialized with the last element as it's always a leader
+    # List to store leaders, initialized with the last element as it'scratch_KNN.py always a leader
     leaders = []
     max_from_right = float('-inf')  # Initialize to negative infinity
 

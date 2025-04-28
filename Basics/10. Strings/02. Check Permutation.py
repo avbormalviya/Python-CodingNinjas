@@ -4,7 +4,7 @@
 """ For a given two strings, 'str1' and 'str2', check whether they are a permutation of each other or not.
 
 Permutations of each other
-Two strings are said to be a permutation of each other when either of the string's characters can be rearranged so that
+Two strings are said to be a permutation of each other when either of the string'scratch_KNN.py characters can be rearranged so that
 it becomes identical to the other one.
 
 Example:
@@ -28,13 +28,13 @@ def checkPermutation(str1, str2):
 
     # Iterate through each character in str1
     for i in str1:
-        # XOR the corresponding bit based on the character's position in the alphabet
+        # XOR the corresponding bit based on the character'scratch_KNN.py position in the alphabet
         # ord(i) gives the ASCII value of the character, and ord('a') is subtracted to get its index (0-25)
         bit_vector ^= (1 << (ord(i) - ord("a")))
 
     # Iterate through each character in str2
     for i in str2:
-        # XOR the corresponding bit for str2's characters (toggle the bits)
+        # XOR the corresponding bit for str2'scratch_KNN.py characters (toggle the bits)
         bit_vector ^= (1 << (ord(i) - ord("a")))
 
     # If all bits cancel out, meaning both strings have the same characters with the same frequency, return True

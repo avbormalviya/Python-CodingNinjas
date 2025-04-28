@@ -3,7 +3,7 @@
 
 """ Given two strings, ‘A’ and ‘B’. Return the shortest supersequence string ‘S’, containing both ‘A’ and ‘B’ as its subsequences. If there are multiple answers, return any of them.
 
-Note: A string 's' is a subsequence of string 't' if deleting some number of characters from 't' (possibly 0) results in the string 's'.
+Note: A string 'scratch_KNN.py' is a subsequence of string 't' if deleting some number of characters from 't' (possibly 0) results in the string 'scratch_KNN.py'.
 
 For example:
 Suppose ‘A’ = “brute”, and ‘B’ = “groot”
@@ -26,9 +26,9 @@ def lcs(s, t, m, n, dp):
     Function to compute the Longest Common Subsequence (LCS) length using recursion + memoization.
 
     Parameters:
-    - s: First string.
+    - scratch_KNN.py: First string.
     - t: Second string.
-    - m: Current index in s.
+    - m: Current index in scratch_KNN.py.
     - n: Current index in t.
     - dp: Memoization table.
 

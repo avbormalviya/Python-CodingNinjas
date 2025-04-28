@@ -40,7 +40,7 @@ def kthSmallest(matrix, n, k):
     # Extract the smallest elements from the heap k times
     for _ in range(k - 1):
         val, row, col = heapq.heappop(heap)  # Get the smallest element
-        # If there's a next column in the same row, add it to the heap
+        # If there'scratch_KNN.py a next column in the same row, add it to the heap
         if col + 1 < n:
             heapq.heappush(heap, (matrix[row][col + 1], row, col + 1))
 
